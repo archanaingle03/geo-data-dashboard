@@ -87,16 +87,13 @@ http://localhost:5173
 
 📸 Screenshots
 Dashboard View
-
-(Add your screenshot here)
-
-assets/dashboard.png
+![Dashboard Screenshot](src/assets/dashboard.png)
 
 Map & Table Synchronization
 
-(Add your screenshot here)
+![Map Sync Screenshot](src/assets/filter.png)
+![Map Sync Screenshot](src/assets/marker.png)
 
-assets/map-sync.png
 
 🧠 Design Decisions
 
