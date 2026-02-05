@@ -44,7 +44,6 @@ Row highlighting on selection
 Optimized to handle 5000+ records smoothly
 
 🗺 Map Integration
-
 Built using React Leaflet
 Displays markers using project latitude & longitude
 Clicking table row:
@@ -55,7 +54,6 @@ Clicking marker:
 Highlights corresponding table row
 
 ⚙ State Management
-
 Implemented using React local state
 No external state libraries used
 Clean separation of UI and data logic
@@ -66,11 +64,9 @@ Lightweight filtering logic
 Avoided unnecessary re-renders
 
 📡 Data Source
-
 Mock API simulates paginated project data.
 
 Data structure example:
-
 {
 id: 1,
 projectName: "Project 1",
@@ -90,12 +86,10 @@ MapView handles spatial visualization
 This improves maintainability and scalability.
 
 Map Synchronization
-
 Leaflet map requires manual resizing when layout changes.
 map.invalidateSize() is used to ensure proper tile rendering.
 
 Performance Optimization
-
 Client-side filtering is used instead of re-fetching data.
 This improves responsiveness and reduces network load.
 
@@ -130,16 +124,15 @@ http://localhost:5173
 ![Marker Selection](./public/screenshots/marker.png)
 
 ⏱ Time Spent
-Task Time
-Project Setup 1 hour
-Table Implementation 2 hours
-Map Integration 2 hours
-Synchronization Logic 2 hours
-Styling & Testing 1 hour
-Total 8 hours
+Task                     Time
+Project Setup           1 hour
+Table Implementation    2 hours
+Map Integration         2 hours
+Synchronization Logic   2 hours
+Styling & Testing       1 hour
+Total                   8 hours
 
 📌 Future Improvements
-
 Server-side pagination
 Marker clustering
 Status color filtering
