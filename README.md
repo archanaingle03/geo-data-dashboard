@@ -1,143 +1,129 @@
-Geo Data Dashboard
-📌 Overview
+📍 Geo Data Dashboard
+🚀 Overview
+The Geo Data Dashboard is a React-based web application that visualizes spatial and tabular project data.
+It displays project locations using an interactive map along with a synchronized data table.
 
-This project is a React-based Geo Data Dashboard that visualizes spatial and tabular data. It displays project location data in both table format and interactive map view. The dashboard supports filtering, sorting, and synchronization between table rows and map markers.
+The dashboard supports:
+Viewing large geo datasets (5000+ records)
+Searching and filtering project data
+Interactive synchronization between table rows and map markers
+Smooth performance with optimized rendering
 
-🚀 Tech Stack
+🧰 Tech Stack
+⚛️ React (Vite)
+🪝 React Hooks
+🗺️ React Leaflet (OpenStreetMap)
+🎨 Custom CSS Styling
+📦 JavaScript (ES6+)
 
-React (Vite)
-React Hooks
-React Leaflet
-OpenStreetMap
-JavaScript
-CSS (Custom styling)
+📁 Project Structure
+src
+ ┣ components
+ ┃ ┣ DataTable.jsx
+ ┃ ┗ MapView.jsx
+ ┣ data
+ ┃ ┗ geoApi.js
+ ┣ pages
+ ┃ ┗ Dashboard.jsx
+ ┣ App.jsx
+ ┗ main.jsx
 
-📂 Folder Structure
-src/
-├── components/
-│ ├── DataTable.jsx
-│ ├── MapView.jsx
-│
-├── data/
-│ ├── geoApi.js
-│
-├── pages/
-│ ├── Dashboard.jsx
-│
-├── App.jsx
-├── main.jsx
-
-✨ Features Implemented
+✨ Features
 📊 Data Table
 
-Displays project data in table format
-
+Displays project records in tabular format
 Columns included:
 Project Name
 Latitude
 Longitude
 Status
 Last Updated
-
 Client-side search filtering
-Row highlighting on selection
-Optimized to handle 5000+ records smoothly
+Row highlighting when selected
+Scrollable table for large dataset support
 
-🗺 Map Integration
+🗺️ Map Integration
 Built using React Leaflet
-Displays markers using project latitude & longitude
-Clicking table row:
-Highlights marker
-Zooms to location
+Displays project locations using map markers
 
-Clicking marker:
-Highlights corresponding table row
+Marker interactions:
+Clicking a table row highlights and zooms marker
+Clicking a marker highlights corresponding table row
+Automatic map resizing for proper rendering
+Performance optimized marker rendering
 
-⚙ State Management
-Implemented using React local state
-No external state libraries used
-Clean separation of UI and data logic
+⚙️ State Management
+Implemented using React Local State
+Central selection state synchronizes table and map
 
-⚡ Performance Handling
-Efficient rendering for large dataset (5000+ rows)
-Lightweight filtering logic
-Avoided unnecessary re-renders
+🚀 Performance Optimization
+Handles 5000+ dataset records
+Marker rendering optimized by limiting visible markers
+Smooth UI interaction and fast filtering
 
-📡 Data Source
-Mock API simulates paginated project data.
+📡 Mock API
+Data is generated using a mock API function:
+Generates 5000 project records
+Includes randomized latitude and longitude
+Simulates network delay for realistic behavior
 
-Data structure example:
-{
-id: 1,
-projectName: "Project 1",
-latitude: 19.1234,
-longitude: 73.1234,
-status: "Active",
-updated: "2026-02-05"
-}
+🖥️ Installation & Setup
+1️⃣ Clone Repository
+git clone https://github.com/archanaingle03/geo-data-dashboard.git
 
-🧠 Key Design Decisions
-Component Separation
+2️⃣ Navigate to Project
+cd geo-data-dashboard
 
-Dashboard handles layout & state
-DataTable handles table rendering
-MapView handles spatial visualization
-
-This improves maintainability and scalability.
-
-Map Synchronization
-Leaflet map requires manual resizing when layout changes.
-map.invalidateSize() is used to ensure proper tile rendering.
-
-Performance Optimization
-Client-side filtering is used instead of re-fetching data.
-This improves responsiveness and reduces network load.
-
-🛠 Installation & Running Project
-Step 1 — Clone Repository
-git clone <https://github.com/archanaingle03>
-cd geo-dashboard
-
-Step 2 — Install Dependencies
+3️⃣ Install Dependencies
 npm install
 
-Step 3 — Start Development Server
+4️⃣ Run Development Server
 npm run dev
 
-Step 4 — Open Browser
+
+Application will run on:
+
 http://localhost:5173
 
 📸 Screenshots
+Dashboard View
 
-## Screenshots
+(Add your screenshot here)
 
-### Dashboard Overview
+assets/dashboard.png
 
-![Dashboard](./public/screenshots/dashboard.png)
+Map & Table Synchronization
 
-### Search Filtering
+(Add your screenshot here)
 
-![Search](./public/screenshots/filter.png)
+assets/map-sync.png
 
-### Marker Selection → Table Highlight
+🧠 Design Decisions
 
-![Marker Selection](./public/screenshots/marker.png)
+Used React functional components for maintainability
+Implemented reusable components for separation of concerns
+Used React Leaflet due to simplicity and performance
+Optimized map rendering to avoid UI lag
+Used mock API to simulate real-world data fetching
 
-⏱ Time Spent
-Task                     Time
-Project Setup           1 hour
-Table Implementation    2 hours
-Map Integration         2 hours
-Synchronization Logic   2 hours
-Styling & Testing       1 hour
-Total                   8 hours
+⏱️ Time Spent
+Task	Time
+Project Setup	1 Hour
+Data Table Implementation	2 Hours
+Map Integration	2.5 Hours
+Synchronization Logic	1.5 Hours
+Performance Optimization	1 Hour
+Testing & Documentation	1 Hour
+
+Total Time: ~9 Hours
+🔗 GitHub Repository
+👉 https://github.com/archanaingle03/geo-data-dashboard
 
 📌 Future Improvements
-Server-side pagination
-Marker clustering
-Status color filtering
-Mobile responsiveness improvements
-Dark mode support
+Add pagination support
+Add marker clustering
+Add status-based filtering
+Add responsive mobile layout
 
 👩‍💻 Author
 Archana Ingle
